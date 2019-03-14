@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /*
+        Thank you CSS Tricks: https://css-tricks.com/perfect-full-page-background-image/
+        background image sourced from: https://www.vectorstock.com/royalty-free-vector/pixel-8bit-game-background-with-ground-and-vector-14922360
+    */
+    /* background: url("./images/Image01.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+body {
+    margin: 0;
+    font-family: "Oswald";
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: darkgrey;
+    min-height: 40px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    height: 100%;
+}
+
+nav > ul > li > a {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+header {
+    height: 92vh; /* Seems awfully specific and error prone. */
+    background-image: #FFFFFF url('./images/Image01.png');
+    /* background-size: 100vh; */
+}
+
+section {
+    height: 100vh;
+}
+
+.section-head {
+    margin-top: 40px;
+}
+
+.s-bio {
+    background-color: rgba(211, 211, 211, .5);
+}
+
+.s-portfolio {
+    background-color: rgba(169, 169, 169, .5);
+}
+
+.s-contact {
+    background-color: rgba(211, 211, 211, .5);
+}
+
+.back-to-top {
+    vertical-align: bottom;
+    font-size: .75rem;
+}
+
+div {
+    border: 1px solid black;
+}
