@@ -40,7 +40,6 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-    vertical-align: middle;
 }
 
 h1 {
@@ -49,15 +48,19 @@ h1 {
 
 header {
     height: 92vh; /* Seems awfully specific and error prone. */
-    background-image: #FFFFFF url('./images/Image01.png');
-    /* background-size: 100vh; */
+    background-image: #FFFFFF url('./images/Image01-1620.png');
+
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.section-head {
+div {
+    border: 1px solid black;
+}
+
+h2.section-head {
     margin-top: 40px;
 }
 
@@ -76,8 +79,4 @@ section {
 .back-to-top {
     vertical-align: bottom;
     font-size: .75rem;
-}
-
-div {
-    border: 1px solid black;
 }
