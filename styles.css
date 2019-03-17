@@ -6,11 +6,11 @@ html {
     /*
         Thank you CSS Tricks: https://css-tricks.com/perfect-full-page-background-image/
     */
-    background: url("./images/Image01.png") no-repeat center center fixed; 
+    /* background: url("./images/Image01.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
 
 body {
@@ -99,10 +99,10 @@ h2.section-head {
 }
 
 .portfolio-item figure {
-    margin: 10px auto;
+    margin: 10px auto 5px auto;
 }
 
-.portfolio-item img {
+.portfolio-item-screenshot {
     display: block;
     margin: 0 auto;
 }
@@ -113,9 +113,23 @@ h2.section-head {
     text-align: center;
 }
 
+.portfolio-tech-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-tech-icon {
+    display: block;
+    margin: 5px;
+}
+
 .portfolio-desc {
     text-align: justify;
-    margin: 10px 0;
+    margin: 5px 0;
+}
+
+.contact-container {
+    
 }
 
 .back-to-top {
