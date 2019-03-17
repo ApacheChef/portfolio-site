@@ -41,7 +41,10 @@ h1 {
 }
 
 header.hero-image {
-    background-image: url('./images/Image01-1620.png');
+    background-image: url('./images/HeroImage_Smaller.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     /* height: 20%;
     width: 20%; */
 }
