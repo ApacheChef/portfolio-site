@@ -129,7 +129,23 @@ h2.section-head {
 }
 
 .contact-container {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* text-align: center; */
+}
+
+.contact-container > a {
+    margin: 10px 5px;
+    /* line-height: 2rem; */
+    font-size: 2rem;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
 }
 
 .back-to-top {
