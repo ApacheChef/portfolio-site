@@ -58,12 +58,16 @@ nav > ul {
 header {
     /*height: 92vh;*/ /*Seems awfully specific and error prone.*/
     height: calc(100vh - var(--nav-height));
-    padding: 0 5px;
+    padding: 0 15px;
 }
 
-h1 {
+header h1 {
     font-size: 2rem;
-    margin: 0;
+    margin: 15px 0 0 2vw;
+}
+
+header h2 {
+    margin: 15px 0 15px 2vw;
 }
 
 header.hero-image {
@@ -87,10 +91,6 @@ section {
 div {
     /* Get rid of this when getting rid of the grayboxes */
     border: 1px solid transparent;
-}
-
-h2.section-head {
-    margin-top: 40px;
 }
 
 /*
@@ -223,12 +223,37 @@ h2.section-head {
         max-width: 50%;
     }
 
-    h1 {
-        font-size: 2.5rem;
+    /* header h1 {
+        font-size: 3rem;
+        margin: 30px 0 0 5vw;
     }
 
-    header {
-        /*height: 95vh;* /* Seems awfully specific and error prone. */
-        padding: 0 5px;
+    header h2 {
+        font-size: 2.5rem;
+        margin: 30px 0 0 5vw;
+    } */
+}
+
+@media screen and (min-width: 800px) {
+    header h1 {
+        margin: 15px 0 15px 5vw;
+        /* font-size: 3rem; */
+    }
+
+    header h2 {
+        margin: 15px 0 15px 5vw;
+        /* font-size: 2.5rem; */
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header h1 {
+        margin: 50px 0 15px 10vw;
+        font-size: 3rem;
+    }
+
+    header h2 {
+        margin: 30px 0 15px 10vw;
+        font-size: 2.5rem;
     }
 }
