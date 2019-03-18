@@ -2,9 +2,32 @@
     box-sizing: border-box;
 }
 
+:root {
+    /* used to calculate the header view height and ul height */
+    --nav-height: 40px;
+}
+
 body {
     margin: 0;
     font-family: "Oswald", sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: darkgrey;
+}
+
+a:hover {
+    color: black;
+    /* Add shadow */
+}
+
+a:active {
+    color: black;
+    /* Add shadow */
 }
 
 /*
@@ -13,14 +36,15 @@ body {
 
 nav {
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
-    background-color: darkgrey;
-    min-height: 40px;
+    background-color: lightgrey;
+    min-height: var(--nav-height);
 }
 
 nav > ul {
     list-style: none;
-    line-height: 200%;
+    line-height: var(--nav-height);
     display: flex;
     justify-content: space-evenly;
     margin: 0;
@@ -32,16 +56,18 @@ nav > ul {
 */
 
 header {
-    height: 92vh; /* Seems awfully specific and error prone. */
+    /*height: 92vh;*/ /*Seems awfully specific and error prone.*/
+    height: calc(100vh - var(--nav-height));
     padding: 0 5px;
 }
 
 h1 {
     font-size: 2rem;
+    margin: 0;
 }
 
 header.hero-image {
-    background-image: url('./images/HeroImage_Smaller.png');
+    background-image: url('./images/background_tall.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,6 +102,8 @@ h2.section-head {
 
 .bio-text {
     text-align: justify;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 /* .s-portfolio {
@@ -129,17 +157,26 @@ h2.section-head {
     text-align: center;
 }
 
-.portfolio-tech-icons-container {
+.portfolio-item-tech-icons-container {
     display: flex;
     justify-content: center;
 }
 
-.portfolio-tech-icon {
+.portfolio-item-tech-icon {
     display: block;
     margin: 5px;
 }
 
-.portfolio-desc {
+.portfolio-item-links {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item-links > a {
+    margin: 0 10px;
+}
+
+.portfolio-item-desc {
     text-align: justify;
     margin: 5px 0;
 }
@@ -163,12 +200,7 @@ h2.section-head {
     font-size: 2rem;
 }
 
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: black;
-}
-
-.back-to-top {
+.back-to-top { /*trying out the [top] link in the mini-bio */
     vertical-align: bottom;
     font-size: .75rem;
 }
@@ -176,3 +208,27 @@ a:link, a:visited, a:hover, a:active {
 /*
     ** MEDIA QUERIES
 */
+
+@media screen and (min-height: 300px) {
+    
+    header.hero-image {
+        background-image: url('./images/background_wide.png');
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .bio-text {
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    header {
+        /*height: 95vh;* /* Seems awfully specific and error prone. */
+        padding: 0 5px;
+    }
+}
