@@ -97,8 +97,9 @@ div {
     ** MORE SPECIFIC SECTION RULES
 */
 
-/* .s-bio {
-} */
+.s-bio > h2{
+    margin: 40px 0;
+}
 
 .bio-text {
     text-align: justify;
@@ -106,11 +107,13 @@ div {
     margin: 0 auto;
 }
 
-/* .s-portfolio {
-} */
+.s-portfolio > h2 {
+    margin: 40px 0;
+}
 
-/* .s-contact {
-} */
+.s-contact > h2 {
+    margin: 40px 0;
+}
 
 /*
     ** MISC FOR GRAYBOX
