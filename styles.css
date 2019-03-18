@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* used to calculate the header view height and ul height */
+    --nav-height: 40px;
+}
+
+body {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: darkgrey;
+}
+
+a:hover {
+    color: black;
+    /* Add shadow */
+}
+
+a:active {
+    color: black;
+    /* Add shadow */
+}
+
+/*
+    ** NAV RULES
+*/
+
+nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: lightgrey;
+    min-height: var(--nav-height);
+}
+
+nav > ul {
+    list-style: none;
+    line-height: var(--nav-height);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    ** HEADER RULES
+*/
+
+header {
+    /*height: 92vh;*/ /*Seems awfully specific and error prone.*/
+    height: calc(100vh - var(--nav-height));
+    padding: 0 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 15px 0 0 2vw;
+}
+
+header h2 {
+    margin: 15px 0 15px 2vw;
+}
+
+header.hero-image {
+    background-image: url('./images/background_tall.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 20%;
+    width: 20%; */
+}
+
+/*
+    ** GENERIC SECTION RULES
+*/
+
+section {
+    min-height: 100vh;
+    padding: 0 5px;
+}
+
+div {
+    /* Get rid of this when getting rid of the grayboxes */
+    border: 1px solid transparent;
+}
+
+/*
+    ** MORE SPECIFIC SECTION RULES
+*/
+
+/* .s-bio {
+} */
+
+.bio-text {
+    text-align: justify;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* .s-portfolio {
+} */
+
+/* .s-contact {
+} */
+
+/*
+    ** MISC FOR GRAYBOX
+*/
+
+.dark-grey {
+    background-color: rgba(211, 211, 211, .5);
+}
+
+.light-grey {
+    background-color: rgba(169, 169, 169, .5);
+}
+
+/*
+    ** PORTFOLIO RULES
+*/
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    /* background-color: blue; */
+    width: 90vw;
+    max-width: 400px;
+    margin: 15px 10px;
+    /* border: 1px solid black; */
+}
+
+.portfolio-item figure {
+    margin: 10px auto 5px auto;
+}
+
+.portfolio-item-screenshot {
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-item figcaption {
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.portfolio-item-tech-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item-tech-icon {
+    display: block;
+    margin: 5px;
+}
+
+.portfolio-item-links {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item-links > a {
+    margin: 0 10px;
+}
+
+.portfolio-item-desc {
+    text-align: justify;
+    margin: 5px 0;
+}
+
+/*
+    ** CONTACT RULES
+*/
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* text-align: center; */
+}
+
+.contact-container > a {
+    margin: 10px 5px;
+    /* line-height: 2rem; */
+    font-size: 2rem;
+}
+
+.back-to-top { /*trying out the [top] link in the mini-bio */
+    vertical-align: bottom;
+    font-size: .75rem;
+}
+
+/*
+    ** MEDIA QUERIES
+*/
+
+@media screen and (min-height: 300px) {
+    
+    header.hero-image {
+        background-image: url('./images/background_wide.png');
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .bio-text {
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    /* header h1 {
+        font-size: 3rem;
+        margin: 30px 0 0 5vw;
+    }
+
+    header h2 {
+        font-size: 2.5rem;
+        margin: 30px 0 0 5vw;
+    } */
+}
+
+@media screen and (min-width: 800px) {
+    header h1 {
+        margin: 15px 0 15px 5vw;
+        /* font-size: 3rem; */
+    }
+
+    header h2 {
+        margin: 15px 0 15px 5vw;
+        /* font-size: 2.5rem; */
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header h1 {
+        margin: 50px 0 15px 10vw;
+        font-size: 3rem;
+    }
+
+    header h2 {
+        margin: 30px 0 15px 10vw;
+        font-size: 2.5rem;
+    }
+}
