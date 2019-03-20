@@ -11,6 +11,7 @@
         this is smooth scroll behaviour FOR FREE.
         https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
         FOR FREE
+        Note: 20180320: Found this works fine in Edge on Android due to Blink engine
     */
     scroll-behavior: smooth;
 }
@@ -51,7 +52,7 @@ nav {
     top: 0;
     background-color: #f5f3f5;
     min-height: var(--nav-height);
-    box-shadow: 0 5px 15px #f5f3f5, 0 -5px 15px #f5f3f5;
+    box-shadow: 0 5px 15px #f5f3f5;/*, 0 -5px 15px #f5f3f5;*/
 }
 
 nav > ul {
@@ -118,6 +119,13 @@ div {
     line-height: 1.5rem;
     max-width: 90%;
     margin: 0 auto;
+}
+
+.back-to-top {
+    text-align: center;
+    display: block;
+    font-size: .9rem;
+    margin: 75px 0;
 }
 
 /*
@@ -198,20 +206,13 @@ div {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    /* text-align: center; */
+
 }
 
 .contact-container > a {
     margin: 10px 5px;
     /* line-height: 2rem; */
     font-size: 2rem;
-}
-
-.back-to-top { /*trying out the [top] link */
-    text-align: center;
-    display: block;
-    font-size: .9rem;
-    margin: 75px 0;
 }
 
 /*
