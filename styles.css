@@ -5,6 +5,7 @@
 :root {
     /* used to calculate the header view height and ul height */
     --nav-height: 40px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,20 +15,23 @@ body {
 
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:link, a:visited {
-    color: darkgrey;
+    color: #040303;
 }
 
 a:hover {
-    color: black;
+    color: #040303;
     /* Add shadow */
+    text-shadow: 2px 2px 7px #6B818C;
 }
 
 a:active {
-    color: black;
+    color: #040303;
     /* Add shadow */
+    text-shadow: 2px 2px 7px #6B818C;
 }
 
 /*
@@ -38,8 +42,10 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
+    background-color: #f5f3f5;
     min-height: var(--nav-height);
+    box-shadow: 0 5px 15px #f5f3f5, 0 -5px 15px #f5f3f5;
 }
 
 nav > ul {
@@ -88,6 +94,12 @@ section {
     padding: 0 5px;
 }
 
+.section-head {
+    /* margin: 40px 0 20px 0; */
+    margin: calc(var(--nav-height) + 10px) 0 20px 0;
+    text-align: center;
+}
+
 div {
     /* Get rid of this when getting rid of the grayboxes */
     border: 1px solid transparent;
@@ -97,35 +109,37 @@ div {
     ** MORE SPECIFIC SECTION RULES
 */
 
-.s-bio > h2{
+/* .s-bio > h2 {
     margin: 40px 0;
-}
+} */
 
 .bio-text {
-    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    line-height: 1.5rem;
     max-width: 90%;
     margin: 0 auto;
 }
 
-.s-portfolio > h2 {
+/* .s-portfolio > h2 {
     margin: 40px 0;
 }
 
 .s-contact > h2 {
     margin: 40px 0;
-}
+} */
 
 /*
     ** MISC FOR GRAYBOX
 */
 
-.dark-grey {
+/* .dark-grey {
     background-color: rgba(211, 211, 211, .5);
 }
 
 .light-grey {
     background-color: rgba(169, 169, 169, .5);
-}
+} */
 
 /*
     ** PORTFOLIO RULES
@@ -180,7 +194,8 @@ div {
 }
 
 .portfolio-item-desc {
-    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
     margin: 5px 0;
 }
 
@@ -203,9 +218,11 @@ div {
     font-size: 2rem;
 }
 
-.back-to-top { /*trying out the [top] link in the mini-bio */
-    vertical-align: bottom;
-    font-size: .75rem;
+
+.back-to-top { /*trying out the [top] link */
+    width: 50%;
+    font-size: .9rem;
+    margin: 0 auto;
 }
 
 /*
@@ -258,5 +275,9 @@ div {
     header h2 {
         margin: 30px 0 15px 10vw;
         font-size: 2.5rem;
+    }
+
+    .portfolio-item {
+        margin: 15px 20px;
     }
 }
