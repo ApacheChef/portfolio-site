@@ -220,9 +220,10 @@ div {
 
 
 .back-to-top { /*trying out the [top] link */
-    width: 50%;
+    text-align: center;
+    display: block;
     font-size: .9rem;
-    margin: 0 auto;
+    margin: 75px 0;
 }
 
 /*
@@ -242,16 +243,6 @@ div {
         min-width: 50%;
         max-width: 50%;
     }
-
-    /* header h1 {
-        font-size: 3rem;
-        margin: 30px 0 0 5vw;
-    }
-
-    header h2 {
-        font-size: 2.5rem;
-        margin: 30px 0 0 5vw;
-    } */
 }
 
 @media screen and (min-width: 800px) {
@@ -268,16 +259,16 @@ div {
 
 @media screen and (min-width: 1000px) {
     header h1 {
-        margin: 50px 0 15px 10vw;
-        font-size: 3rem;
+        margin: 100px 0 15px 10vw;
+        font-size: 4.5rem;
     }
 
     header h2 {
         margin: 30px 0 15px 10vw;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .portfolio-item {
-        margin: 15px 20px;
+        margin: 15px 30px;
     }
 }
