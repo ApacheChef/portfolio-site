@@ -152,11 +152,9 @@ div {
 }
 
 .portfolio-item {
-    /* background-color: blue; */
     width: 90vw;
     max-width: 400px;
     margin: 15px 10px;
-    /* border: 1px solid black; */
 }
 
 .portfolio-item figure {
@@ -254,6 +252,30 @@ div {
     header h2 {
         margin: 15px 0 15px 5vw;
         /* font-size: 2.5rem; */
+    }
+
+    .section-head {
+        font-size: 3rem;
+    }
+
+    .bio-text {
+        font-size: 1.25rem;
+    }
+
+    .portfolio-item figcaption {
+        font-size: 2rem;
+    }
+    
+    .portfolio-item-tech-icon {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-item-links > a {
+        font-size: 1.25rem;
+    }
+
+    .portfolio-item-desc {
+        font-size: 1.25rem;
     }
 }
 
