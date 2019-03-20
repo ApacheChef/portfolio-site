@@ -228,6 +228,16 @@ div {
     ** MEDIA QUERIES
 */
 
+@media screen and (max-width: 321px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    header h2 {
+        font-size: 1.25rem;
+    }
+}
+
 @media screen and (min-height: 300px) {
     
     header.hero-image {
@@ -243,15 +253,51 @@ div {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) { /* Just over the iPhoneX width when roatated */
     header h1 {
         margin: 15px 0 15px 5vw;
-        /* font-size: 3rem; */
+        font-size: 3rem;
     }
 
     header h2 {
         margin: 15px 0 15px 5vw;
-        /* font-size: 2.5rem; */
+        font-size: 2.5rem;
+    }
+
+    .section-head {
+        font-size: 3rem;
+    }
+
+    .bio-text {
+        font-size: 1.25rem;
+    }
+
+    .portfolio-item figcaption {
+        font-size: 2rem;
+    }
+    
+    .portfolio-item-tech-icon {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-item-links > a {
+        font-size: 1.25rem;
+    }
+
+    .portfolio-item-desc {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 800px) { /* Just over the iPhoneX width when roatated */
+    header h1 {
+        margin: 15px 0 15px 5vw;
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        margin: 15px 0 15px 5vw;
+        font-size: 2rem;
     }
 
     .section-head {
@@ -281,13 +327,29 @@ div {
 
 @media screen and (min-width: 1000px) {
     header h1 {
-        margin: 100px 0 15px 10vw;
-        font-size: 4.5rem;
+        margin: 100px 0 15px 7vw;
+        font-size: 3.5rem;
     }
 
     header h2 {
-        margin: 30px 0 15px 10vw;
-        font-size: 3rem;
+        margin: 30px 0 15px 7vw;
+        font-size: 2.25rem;
+    }
+
+    .portfolio-item {
+        margin: 15px 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header h1 {
+        margin: 100px 0 15px 7vw;
+        font-size: 4.25rem;
+    }
+
+    header h2 {
+        margin: 30px 0 15px 7vw;
+        font-size: 2.75rem;
     }
 
     .portfolio-item {
