@@ -84,7 +84,7 @@ header h2 {
 }
 
 header.hero-image {
-    background-image: url('./images/background_tall.png');
+    background-image: url('../images/background_tall.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,7 +234,7 @@ div {
 @media screen and (min-height: 300px) {
     
     header.hero-image {
-        background-image: url('./images/background_wide.png');
+        background-image: url('../images/background_wide.png');
     }
 }
 
