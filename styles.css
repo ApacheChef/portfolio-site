@@ -5,6 +5,13 @@
 :root {
     /* used to calculate the header view height and ul height */
     --nav-height: 40px;
+
+    /*
+        Even though this doesn't work on Safari, IE, and Edge
+        this is smooth scroll behaviour FOR FREE.
+        https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
+        FOR FREE
+    */
     scroll-behavior: smooth;
 }
 
@@ -42,7 +49,6 @@ nav {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    /* background-color: lightgrey; */
     background-color: #f5f3f5;
     min-height: var(--nav-height);
     box-shadow: 0 5px 15px #f5f3f5, 0 -5px 15px #f5f3f5;
@@ -81,8 +87,6 @@ header.hero-image {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 20%;
-    width: 20%; */
 }
 
 /*
@@ -95,7 +99,6 @@ section {
 }
 
 .section-head {
-    /* margin: 40px 0 20px 0; */
     margin: calc(var(--nav-height) + 10px) 0 20px 0;
     text-align: center;
 }
@@ -109,10 +112,6 @@ div {
     ** MORE SPECIFIC SECTION RULES
 */
 
-/* .s-bio > h2 {
-    margin: 40px 0;
-} */
-
 .bio-text {
     font-family: "Montserrat", sans-serif;
     text-align: left;
@@ -120,14 +119,6 @@ div {
     max-width: 90%;
     margin: 0 auto;
 }
-
-/* .s-portfolio > h2 {
-    margin: 40px 0;
-}
-
-.s-contact > h2 {
-    margin: 40px 0;
-} */
 
 /*
     ** MISC FOR GRAYBOX
@@ -216,7 +207,6 @@ div {
     font-size: 2rem;
 }
 
-
 .back-to-top { /*trying out the [top] link */
     text-align: center;
     display: block;
@@ -228,6 +218,7 @@ div {
     ** MEDIA QUERIES
 */
 
+/* Adjust header fonts down on iPhone 5 size displays */
 @media screen and (max-width: 321px) {
     header h1 {
         font-size: 1.6rem;
@@ -238,6 +229,7 @@ div {
     }
 }
 
+/* Swap out "hero image" above 300px displays */
 @media screen and (min-height: 300px) {
     
     header.hero-image {
@@ -245,15 +237,27 @@ div {
     }
 }
 
-@media screen and (min-width: 500px) {
+/* On higher vertical resolutions, increase nav size and nav link font */
+@media screen and (min-height: 1000px) {
+    :root {
+        --nav-height: 60px;
+    }
 
+    nav > ul > li > a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Keep bioigraphy text from being too wide and hard to read on wider displays */
+@media screen and (min-width: 500px) {
     .bio-text {
         min-width: 50%;
         max-width: 50%;
     }
 }
 
-@media screen and (min-width: 750px) { /* Just over the iPhoneX width when roatated */
+/* A width of 750px is about the point where elements really need to be scaled up */
+@media screen and (min-width: 750px) {
     header h1 {
         margin: 15px 0 15px 5vw;
         font-size: 3rem;
@@ -289,7 +293,8 @@ div {
     }
 }
 
-@media screen and (min-width: 800px) { /* Just over the iPhoneX width when roatated */
+/* Bump header text down a tad on iPhone X like displays */
+@media screen and (min-width: 800px) {
     header h1 {
         margin: 15px 0 15px 5vw;
         font-size: 2.5rem;
@@ -325,6 +330,7 @@ div {
     }
 }
 
+/* Some adjustments for even wider screens */
 @media screen and (min-width: 1000px) {
     header h1 {
         margin: 100px 0 15px 7vw;
@@ -341,6 +347,7 @@ div {
     }
 }
 
+/* Further adjustments for HD resolutions */
 @media screen and (min-width: 1200px) {
     header h1 {
         margin: 100px 0 15px 7vw;
