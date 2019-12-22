@@ -5,15 +5,6 @@
 :root {
     /* used to calculate the header view height and ul height */
     --nav-height: 40px;
-
-    /*
-        Even though this doesn't work on Safari, IE, and Edge
-        this is smooth scroll behaviour FOR FREE.
-        https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
-        FOR FREE
-        Note: 20180320: Found this works fine in Edge on Android due to Blink engine
-    */
-    scroll-behavior: smooth;
 }
 
 body {
