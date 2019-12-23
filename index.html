@@ -15,7 +15,7 @@
     </head>
 
     <body>
-        <header role="banner" class="hero-image" id="page-head">
+        <header role="banner" class="hero-image color-header" id="page-head">
             <div>
                 <h1>Christopher Williams</h1>
                 <h2>Full-Stack Developer</h2>
@@ -32,28 +32,59 @@
         <main>
             <section>
                 <!-- Biography Section -->
-                <div class="s-bio" id="section-bio">
+                <div class="s-bio color-about" id="section-bio">
                     <h2 class="section-head">About me</h2>
                     <p class="bio-text">I am a Full-Stack JavaScript developer with 18 years in IT. I have experience with
                         HTML, CSS, JavaScript, C#, SQL, testing, ReactJS, Node.js, Express.JS,
                         helping end-users, managing and deploying servers and network equipment, vendor relations,
                         Microsoft Dynamics GP, Microsoft SQL Server, PostgreSQL, and department management.</p>
                     <p class="bio-text">I've had a strong interest in software development since childhood and now find
-                        myself in a position to make it my career instead of a hobby. I care about writing readable,
-                        testable, maintainable code, and producing faithful implementations of design specs. I enjoy working as part of a team,
-                        solving problems, learning, and refining my solutions to make them the best they can be. Aside
-                        from writing code, I enjoy playing guitar, electronics, gaming, learning to skateboard,
-                        reading on varied topics from cosmology to personal improvement, dabbling with game development,
-                        and spending time with friends and family.</p>
+                        myself in a position to make it my career instead of a hobby. I care about writing good code - code that is readable,
+                        testable, and maintainable. I enjoy working as part of a team, solving problems, learning, and refining
+                        my solutions to make them the best they can be. Aside from writing code, I enjoy playing guitar,
+                        electronics, gaming, learning to skateboard, reading on varied topics from cosmology to personal
+                        improvement, dabbling with game development, and spending time with friends and family.</p>
                     <a class="back-to-top" href="#page-head" target="_self">[top]</a>
                 </div>
             </section>
             <section>
                 <!-- Portfolio Section -->
-                <div class="s-portfolio" id="section-portfolio">
+                <div class="s-portfolio color-portfolio" id="section-portfolio">
                     <h2 class="section-head">Portfolio</h2>
                     <div class="portfolio">
                         <!-- Top of portfolio div -->
+                        <div class="portfolio-item">
+                            <figure>
+                                <figcaption>Journal Buddy</figcaption>
+                                <img class="portfolio-item-screenshot" src="./images/ss-jb-min.png"
+                                    alt="Application screenshot">
+                            </figure>
+                            <div class="portfolio-item-tech-icons-container">
+                                <span class="portfolio-item-tech-icon"><i class="fab fa-html5"></i></span>
+                                <span class="portfolio-item-tech-icon"><i class="fab fa-css3-alt"></i></span>
+                                <span class="portfolio-item-tech-icon"><i class="fab fa-node-js"></i></span>
+                                <span class="portfolio-item-tech-icon"><i class="fab fa-react"></i></span>
+                                <span class="portfolio-item-tech-icon"><i class="fas fa-database"></i></span>
+                            </div>
+                            <div class="portfolio-item-links">
+                                <a href="https://journal-buddy.cwilliams.now.sh" rel="noopener"
+                                target="_blank">Live Application</a>
+                                <a href="https://github.com/Williams-Christopher/journal-buddy" rel="noopener"
+                                target="_blank">GitHub -
+                                    Client</a>
+                                <a href="https://github.com/Williams-Christopher/journal-buddy-api" rel="noopener"
+                                target="_blank">GitHub -
+                                    API</a>
+                            </div>
+                            <p class="portfolio-item-desc">Journal Buddy can help you reach your journaling goals.
+                                Use Journal Buddy to make entries that recount your challenges, capture your ideas,
+                                and note the things you're thankful for in Journal Buddy's easy to use,
+                                distraction-free interface. Journaling is most helpful if it's done regularly. Use
+                                Journal Buddy's metrics to find out what days of the week you are most likely to
+                                journal and see counts of your entries by month or days of the week. Journal Buddy
+                                is a mobile-first application utilizes React, Node, Express, HTML, CSS, JavaScript,
+                                & PostgreSQL.</p>
+                        </div>
                         <div class="portfolio-item">
                             <figure>
                                 <figcaption>MMS Photo Board</figcaption>
@@ -68,7 +99,7 @@
                                 <span class="portfolio-item-tech-icon"><i class="fas fa-database"></i></span>
                             </div>
                             <div class="portfolio-item-links">
-                                <a href="http://github.com" rel="noopener"
+                                <a href="https://mms-photo-board.cwilliams.now.sh" rel="noopener"
                                 target="_blank">Live Application</a>
                                 <a href="https://github.com/Williams-Christopher/mms-photo-board" rel="noopener"
                                 target="_blank">GitHub -
@@ -138,7 +169,7 @@
             </section>
             <section>
                 <!-- Contact Section -->
-                <div class="s-contact" id="section-contact">
+                <div class="s-contact color-contact" id="section-contact">
                     <h2 class="section-head">Contact Information</h2>
                     <div class="contact-container">
                         <h3><em>How can we connect?</em></h3>

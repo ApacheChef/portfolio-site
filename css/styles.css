@@ -12,6 +12,22 @@ body {
     font-family: "Oswald", sans-serif;
 }
 
+.color-header {
+    background-color: #F1EBEB;
+}
+
+.color-about {
+    background-color: #88CCF1;
+}
+
+.color-portfolio {
+    background-color: #B5C9C3;
+}
+
+.color-contact {
+    background-color: #F1EBEB;
+}
+
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     font-weight: bold;
@@ -96,13 +112,16 @@ section {
 }
 
 div {
-    /* Get rid of this when getting rid of the grayboxes */
     border: 1px solid transparent;
 }
 
 /*
     ** MORE SPECIFIC SECTION RULES
 */
+
+.s-bio {
+    min-height: 100vh;
+}
 
 .bio-text {
     font-family: "Montserrat", sans-serif;
@@ -118,18 +137,6 @@ div {
     font-size: .9rem;
     margin: 75px 0;
 }
-
-/*
-    ** MISC FOR GRAYBOX
-*/
-
-/* .dark-grey {
-    background-color: rgba(211, 211, 211, .5);
-}
-
-.light-grey {
-    background-color: rgba(169, 169, 169, .5);
-} */
 
 /*
     ** PORTFOLIO RULES
@@ -191,6 +198,10 @@ div {
 /*
     ** CONTACT RULES
 */
+
+.s-contact {
+    min-height: 100vh;
+}
 
 .contact-container {
     display: flex;
