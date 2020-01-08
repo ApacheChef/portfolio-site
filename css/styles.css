@@ -59,7 +59,7 @@ nav {
     top: 0;
     background-color: #f5f3f5;
     min-height: var(--nav-height);
-    box-shadow: 0 5px 15px #f5f3f5;/*, 0 -5px 15px #f5f3f5;*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 nav > ul {
@@ -103,7 +103,6 @@ header.hero-image {
 
 section {
     min-height: 100vh;
-    padding: 0 5px;
 }
 
 .section-head {
